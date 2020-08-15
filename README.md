@@ -1,9 +1,9 @@
 # sb-forum-api
 This is a SpringBoot API project called Forum
 
-### About the Forum Application
+#### About the Forum Application
 
-This is a simple application to study a REST Implementation using 
+This is a sample application to study a REST Implementation using 
 
 * SpringBoot
 * Spring Data JPA
