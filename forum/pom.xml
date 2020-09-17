@@ -13,7 +13,7 @@
 	<artifactId>forum</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>forum</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo projeto REST API com Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -61,6 +61,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+		
+		<dependency>
+		    <groupId>de.codecentric</groupId>
+		    <artifactId>spring-boot-admin-starter-client</artifactId>
+		    <version>2.1.4</version>
+		</dependency>	
 		
 		<dependency>
 		    <groupId>io.jsonwebtoken</groupId>
