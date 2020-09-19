@@ -14,6 +14,8 @@ import javax.persistence.ManyToMany;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import com.google.gson.Gson;
+
 @Entity
 public class Usuario implements UserDetails {
 
@@ -119,6 +121,14 @@ public class Usuario implements UserDetails {
 	@Override
 	public boolean isEnabled() {
 		return true;
+	}
+	
+	public String toJson() {
+		return new Gson().toJson(this);
+	}
+	
+	public String authToJson() {
+		return "{\"email\":\"" + this.email + "\",\"senha\":" + this.senha +"}";
 	}
 
 }
